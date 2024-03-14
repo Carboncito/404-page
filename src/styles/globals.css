@@ -4,6 +4,20 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
+  --color-black: 61, 59, 64;
+  --color-blue: 82, 92, 235;
+  --color-grey: 191, 207, 231;
+  --color-pink: 248, 237, 255;
+}
+
+
+@layer base {
+  :root {
+    --color-black: 61, 59, 64;
+    --color-blue: 82, 92, 235;
+    --color-grey: 191, 207, 231;
+    --color-pink: 248, 237, 255;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,5 +30,5 @@
 
 body {
   color: black;
-  background: white
+  background: rgb(var(--color-blue))
 }

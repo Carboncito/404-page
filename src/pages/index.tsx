@@ -1,14 +1,12 @@
 import { Button } from '@/components';
-import { Inter } from 'next/font/google';
-import Image from 'next/image';
-
-const inter = Inter({ subsets: ['latin'] });
+import Card from '@/components/Card';
 
 export default function Home() {
   return (
     <main className={`flex min-h-screen p-5`}>
-      <div className="flex flex-row flex-1">
-        <div className="flex flex-1 items-center">
+      <div className="flex flex-row flex-1 m-6">
+        <Card />
+        {/* <div className="flex flex-1 items-center">
           <div>
             <img src="/img/warning.png" alt="404" width={300} height={60} />
           </div>
@@ -20,7 +18,7 @@ export default function Home() {
             unavailable
           </p>
           <Button label="Back to Home" className="justify-start mt-14" />
-        </div>
+        </div> */}
       </div>
     </main>
   );
